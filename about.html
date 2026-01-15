@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Chef Jerick | Delishfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-hero {
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      padding: 30px;
+      background: linear-gradient(180deg, rgba(255,107,107,0.03), rgba(124,198,254,0.02));
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .resume-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      position: sticky;
+      top: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .resume-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 14px;
+      border: 4px solid rgba(255,255,255,0.03);
+    }
+
+    .resume-title { font-weight:700; color:#ff6b6b; margin-bottom:6px; }
+    .resume-sub { color:var(--muted, #cfd5de); font-size:14px; margin-bottom:12px; }
+
+    .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .skill { background: rgba(255,255,255,0.03); padding:6px 10px; border-radius:999px; color:#dce3eb; font-size:13px; }
+
+    @media (max-width:980px){
+      .about-grid{ grid-template-columns: 1fr; }
+      .resume-card{ position:relative; top:auto; width:80%; margin:0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">🍴</div>
+      <div class="title">Delishfolio</div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Cuisine  ▾</button>
+        <div class="dropdown-content">
+          <a href="dishes.html">Dishes</a>
+          <a href="desserts.html">Desserts</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="about-hero">
+    <div class="about-grid">
+      <div class="about-main">
+        <h2>About Delishfolio & Chef Jerick</h2>
+        <h3>What this page is about</h3>
+
+        <p>
+          <strong>Delishfolio</strong> was created by
+          <strong>Chef Jerick Van E. Catarig</strong>. as a heartfelt space to share his culinary passion. This page is a living demonstration of his dedication to the kitchen.
+        </p>
+
+        <p>
+          This page acts as a professional portfolio and recipe showcase. It’s designed
+          to be simple, beautiful, and practical — a place where anyone can explore
+          approachable recipes, learn cooking tips, and find inspiration to create
+          memorable meals.
+        </p>
+
+        <h3>My Philosophy</h3>
+        <p>
+          I believe that cooking, when done with love, transforms into a powerful and unique form of self-expression.
+        </p>
+
+        <h3>What you'll find on Delishfolio</h3>
+        <ul>
+          <li>Thoughtfully written recipes with clear steps and helpful notes.</li>
+          <li>Filipino classics dishes and desserts.</li>
+          <li>Design-forward presentation—clean photos and consistent layouts.</li>
+        </ul>
+
+
+
+        <h3> </h3>
+        <p>
+          <strong> </strong>  <br>
+          <strong> </strong>  <br>
+          <strong> </strong>  
+        </p>
+      </div>
+
+      <aside class="resume-card">
+        <img src="Images/88239276-6795-44a6-b2fd-ac48e067bffa.jpg" alt="Jerick Van E. Catarig">
+
+        <div class="resume-title">Chef Jerick Van E. Catarig</div>
+        <div class="resume-sub">Founder • Culinary Creator • Food Stylist</div>
+
+        <div class="info-row">
+          <strong>Specialties</strong>
+          <div class="skills">
+            <span class="skill">Filipino Cuisine</span>
+            <span class="skill">Comfort Food</span>
+            <span class="skill">Food Styling</span>
+            <span class="skill">Pastry Basics</span>
+          </div>
+        </div>
+
+        
+
+        
+      </aside>
+    </div>
+  </main>
+
+  <footer style="margin-top:34px;">
+    <p style="text-align:center;color:#9aa4b2">© 2025 Delishfolio by Chef Jerick Van E. Catarig</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delishfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== SPLASH SCREEN ===== -->
+  <div id="splash">
+    <div class="splash-content">
+      <h1 class="chef-name">Welcome to Delishfolio</h1>
+      <p class="tagline">Made with Love</p>
+      <button id="continueBtn">Get Started</button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div id="mainContent" class="hidden">
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="brand">
+        <div class="logo">🍴</div>
+        <div class="title">Delishfolio</div>
+      </div>
+     <nav>
+  <a href="index.html" class="active">Home</a>
+
+  <!-- DROPDOWN -->
+  <div class="dropdown">
+    <button class="dropbtn">Cuisine  ▾</button>
+    <div class="dropdown-content">
+      <a href="dishes.html">Dishes</a>
+      <a href="desserts.html">Desserts</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <h1>Delishfolio</h1>
+      <p>Crafted by <b>Jerick Van E. Catarig</b> — A portfolio of flavor and passion.</p>
+    </section>
+
+   
+
+    <!-- ===== RECIPES GRID ===== -->
+    <section class="grid design-gallery">
+      <div class="card">
+        <img src="Images/580+ Kitchen Captions And Quotes For Instagram.jpg" alt="Fluffy Pancakes" />
+        <h3>Discover Excellent Recipes</h3>
+        <p>Cooking is a way to express yourself.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/How to Make Bistek Tagalog (Filipino Beefsteak).jpg" alt="Chicken Adobo" />
+        <h3>Dishes</h3>
+        <p>Savory, satisfying, and infused with rich history and tradition. Explore the classics of every home chef.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.webp " alt="Spaghetti Carbonara" />
+        <h3>Desserts</h3>
+        <p>Sweet masterpieces designed to dazzle your eyes and delight your palate. The perfect finish to any meal.</p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p><i>© 2025 Delishfolio by Chef Jerick Van E. Catarig</i></p>
+    </footer>
+  </div>
+
+  <script>
+    const splash = document.getElementById("splash");
+    const mainContent = document.getElementById("mainContent");
+    const continueBtn = document.getElementById("continueBtn");
+
+    continueBtn.addEventListener("click", () => {
+      splash.classList.add("fade-out");
+      setTimeout(() => {
+        splash.style.display = "none";
+        mainContent.classList.remove("hidden");
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
